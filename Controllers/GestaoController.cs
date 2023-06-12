@@ -6,6 +6,14 @@ namespace newmarket.Controllers
     {
         public IActionResult Index() {
             return View();
-        }   
+        }  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+        public IActionResult Categorias() {
+            return View();
+        } 
+
+        public IActionResult NovaCategoria() {
+            return View();
+        }
     }
 }

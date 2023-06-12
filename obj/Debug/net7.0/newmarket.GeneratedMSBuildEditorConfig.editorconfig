@@ -20,8 +20,16 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[c:/ARQUIVOS/projetos/newmarket/Views/Gestao/Categorias.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXENhdGVnb3JpYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/ARQUIVOS/projetos/newmarket/Views/Gestao/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/ARQUIVOS/projetos/newmarket/Views/Gestao/NovaCategoria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGFvXE5vdmFDYXRlZ29yaWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/ARQUIVOS/projetos/newmarket/Views/Home/Index.cshtml]

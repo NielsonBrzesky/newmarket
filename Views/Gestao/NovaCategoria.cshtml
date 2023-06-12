@@ -1,0 +1,10 @@
+@model newmarket.DTO.CategoriaDTO
+@{
+    Layout = "_LayoutAdmin";
+}
+<form class="form-horizontal" asp-controller="Categorias" asp-action="Salvar" method="post">
+    <input type="hidden" asp-for="Id" value="0">
+    <label asp-for="Nome">Nome</label>
+    <input type="text" asp-for="Nome" class="form-control">
+    <button class="btn btn-succes">Cadastrar</button>
+</form>

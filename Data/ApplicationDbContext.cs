@@ -14,8 +14,5 @@ public class ApplicationDbContext : IdentityDbContext
     public DbSet<Saida> Saidas { get; set; }
     public DbSet<Venda> Vendas { get; set; }
 
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-        : base(options)
-    {
-    }
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) {}
 }

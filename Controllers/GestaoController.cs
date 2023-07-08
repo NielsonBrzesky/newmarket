@@ -15,5 +15,14 @@ namespace newmarket.Controllers
         public IActionResult NovaCategoria() {
             return View();
         }
+
+            public IActionResult Fornecedores() {
+            return View();
+        } 
+
+        public IActionResult NovoFornecedor() {
+            return View();
+        } 
+
     }
 }

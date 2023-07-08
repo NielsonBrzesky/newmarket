@@ -5,15 +5,15 @@ namespace newmarket.DTO
     {
         [Required]
         public int Id { get; set;}
-        [Required(ErrorMessage="Nome de fornecedor é obrigatório!")]
+        [Required(ErrorMessage="Nome de fornecedor Ã© obrigatÃ³rio!")]
         [StringLength(100, ErrorMessage = "Nome de fornecedor muito grande, tente um nome menor!")]
         [MinLength(2, ErrorMessage = "Nome de fornecedor muito pequeno, tente um nome com mais de 2 caracteres.")]
         public string Nome { get; set; }
-        [Required(ErrorMessage = "E-mail de fornecedor é obrigatorio!")]
-        [EmailAddress(ErrorMessage = "E-mail inválido!")]
+        [Required(ErrorMessage = "E-mail de fornecedor Ã© obrigatorio!")]
+        [EmailAddress(ErrorMessage = "E-mail invÃ¡lido!")]
         public string Email { get; set; }
-        [Required(ErrorMessage = "E-mail de fornecedor é obrigatorio!")]
-        [Phone(ErrorMessage = "Número de telefone inválido!")]
+        [Required(ErrorMessage = "Telefone do fornecedor Ã© obrigatorio!")]
+        [Phone(ErrorMessage = "NÃºmero de telefone invÃ¡lido!")]
         public string Telefone { get; set; }
     }
 }

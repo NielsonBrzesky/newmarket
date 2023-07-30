@@ -18690,6 +18690,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\ARQUIVOS\\projetos\\newmarket\\Views\\Gestao\\EditarCategoria.cshtml",
+      "TargetPath": "Views\\Gestao\\EditarCategoria.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\ARQUIVOS\\projetos\\newmarket\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"

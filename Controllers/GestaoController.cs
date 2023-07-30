@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using newmarket.Data;
+using newmarket.DTO;
 
 namespace newmarket.Controllers
 {
@@ -22,6 +23,14 @@ namespace newmarket.Controllers
 
         public IActionResult NovaCategoria() {
             return View();
+        }
+
+        public IActionResult EditarCategoria(int id) {
+            var categoria = dataBase.Categorias.First(cat => cat.Id.Equals(id));
+            CategoriaDTO categoriaView = new CategoriaDTO();
+            categoriaView.Id = categoria.Id;
+            categoriaView.Nome = categoria.Nome;
+            return View(categoriaView);
         }
 
         public IActionResult Fornecedores() {

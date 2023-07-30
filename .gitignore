@@ -25,9 +25,9 @@ nupkg/
 *.user
 *.userosscache
 *.sln.docstates
-*.dll
 *.pdb
 *.log
+*.cashe
 
 # Build results
 [Dd]ebug/

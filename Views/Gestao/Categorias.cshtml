@@ -22,13 +22,13 @@
         </tr>
     </thead>
     <body>
-        @foreach (var categorias in Model)
+        @foreach (var categoria in Model)
         {
             <tr>
-                <td>@categorias.Id</td>
-                <td>@categorias.Nome</td>
+                <td>@categoria.Id</td>
+                <td>@categoria.Nome</td>
                 <td>
-                    <a class="btn btn-primary" href="/Gestao/EditarCategoria/@categorias.Id">Editar</a>
+                    <a class="btn btn-primary" href="/Gestao/EditarCategoria/@categoria.Id">Editar</a>
                     <button class="btn btn-danger">Deletar</button>
                 </td>
             </tr>

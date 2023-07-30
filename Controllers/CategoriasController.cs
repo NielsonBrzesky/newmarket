@@ -26,5 +26,16 @@ namespace newmarket.Controllers
                 return View("../Gestao/NovaCategoria");
             }
         }
+
+        public IActionResult Atualizar(CategoriaDTO categoriaTemp) {
+            if(ModelState.IsValid) {
+                var categoria = dataBase.Categorias.First(cat => cat.Id.Equals(categoriaTemp.Id));
+                categoria.Nome = categoriaTemp.Nome;
+                dataBase.SaveChanges();
+                return RedirectToAction("Categorias", "Gestao");
+            } else {
+                return View("../Gestao/EditarCategoria");
+            }
+        }
     }
 }

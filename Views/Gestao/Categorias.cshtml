@@ -1,3 +1,4 @@
+@model IEnumerable<newmarket.Models.Categoria>
 @{
     Layout = "_LayoutAdmin";
 }
@@ -5,3 +6,27 @@
 <hr>
 <a asp-action="NovaCategoria" asp-controller="Gestao" class="btn btn-success">Criar nova categoria</a>
 <hr/>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <body>
+        @foreach (var categorias in Model)
+        {
+            <tr>
+                <td>@categorias.Id</td>
+                <td>@categorias.Nome</td>
+                <td>
+                    <button class="btn btn-primary">Editar</button>
+                    <button class="btn btn-danger">Deletar</button>
+                </td>
+            </tr>
+        }
+    </body>
+</table>
+

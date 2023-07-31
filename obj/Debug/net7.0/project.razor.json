@@ -18690,6 +18690,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\ARQUIVOS\\projetos\\newmarket\\Views\\Gestao\\EditarFornecedor.cshtml",
+      "TargetPath": "Views\\Gestao\\EditarFornecedor.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\ARQUIVOS\\projetos\\newmarket\\Views\\Shared\\_LayoutAdmin.cshtml",
       "TargetPath": "Views\\Shared\\_LayoutAdmin.cshtml",
       "FileKind": "mvc"

@@ -42,6 +42,16 @@ namespace newmarket.Controllers
             return View();
         }
 
+        public IActionResult EditarFornecedor(int id) {
+            var fornecedor = dataBase.Fornecedores.First(fornecedor => fornecedor.Id.Equals(id));
+            FornecedorDTO fornecedorView = new FornecedorDTO();
+            fornecedorView.Id = fornecedor.Id;
+            fornecedorView.Nome = fornecedor.Nome;
+            fornecedorView.Email = fornecedor.Email;
+            fornecedorView.Telefone = fornecedor.Telefone;
+            return View(fornecedorView);
+        }
+
         public IActionResult Produtos() {
             return View();
         } 

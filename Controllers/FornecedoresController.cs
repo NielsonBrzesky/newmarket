@@ -28,5 +28,19 @@ namespace newmarket.Controllers
                 return View("../Gestao/NovoFornecedor");
             }
         }
+
+        [HttpPost]
+        public IActionResult Atualizar(FornecedorDTO fornecedorTemp) {
+            if(ModelState.IsValid) {
+                var fornecedor = dataBase.Fornecedores.First(fornecedor => fornecedor.Id.Equals(fornecedorTemp.Id));
+                fornecedor.Nome = fornecedorTemp.Nome;
+                fornecedor.Email = fornecedorTemp.Email;
+                fornecedor.Telefone = fornecedorTemp.Telefone;
+                dataBase.SaveChanges();
+                return RedirectToAction("Fornecedores", "Gestao");
+            } else {
+                return View("../Gestao/EditarFornecedor");
+            }
+        }
     }
 }

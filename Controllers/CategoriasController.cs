@@ -37,5 +37,15 @@ namespace newmarket.Controllers
                 return View("../Gestao/EditarCategoria");
             }
         }
+
+        [HttpPost]
+        public IActionResult Deletar(int id) {
+            if(id > 0) {
+                var categoria = dataBase.Categorias.First(cat => cat.Id.Equals(id));
+                categoria.Status = false;
+                dataBase.SaveChanges();
+            }
+            return RedirectToAction("Categorias", "Gestao");
+        }
     }
 }

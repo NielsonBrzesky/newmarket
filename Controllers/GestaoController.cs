@@ -34,7 +34,8 @@ namespace newmarket.Controllers
         }
 
         public IActionResult Fornecedores() {
-            return View();
+            var fornecedores = dataBase.Fornecedores.Where(fornecedor => fornecedor.Status.Equals(true)).ToList();
+            return View(fornecedores);
         } 
 
         public IActionResult NovoFornecedor() {

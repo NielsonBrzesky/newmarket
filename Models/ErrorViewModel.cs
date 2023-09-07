@@ -1,4 +1,4 @@
-namespace newmarket.Models;
+namespace SONMARKET.Models;
 
 public class ErrorViewModel
 {

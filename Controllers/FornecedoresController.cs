@@ -42,5 +42,16 @@ namespace newmarket.Controllers
                 return View("../Gestao/EditarFornecedor");
             }
         }
+
+        // [HttpPost]
+        // public IActionResult Deletar(int id) {
+        //     if(id > 0) {
+        //         var fornecedor = database.Fornecedores.First(forne => forne.Id == id);
+        //         fornecedor.Status = false;
+        //         database.SaveChanges();
+        //     }
+        //     return RedirectToAction("Fornecedores", "Gestao");
+        //     //return Content(id.ToString());
+        // }
     }
 }

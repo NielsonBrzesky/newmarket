@@ -8,9 +8,11 @@ namespace newmarket.DTO
         [Required(ErrorMessage="Nome de fornecedor é obrigatório!")]
         [StringLength(100, ErrorMessage = "Nome de fornecedor muito grande, tente um nome menor!")]
         [MinLength(2, ErrorMessage = "Nome de fornecedor muito pequeno, tente um nome com mais de 2 caracteres.")]
+
         public string Nome { get; set; }
         [Required(ErrorMessage = "E-mail de fornecedor é obrigatorio!")]
         [EmailAddress(ErrorMessage = "E-mail inválido!")]
+        
         public string Email { get; set; }
         [Required(ErrorMessage = "Telefone do fornecedor é obrigatorio!")]
         [Phone(ErrorMessage = "Número de telefone inválido!")]

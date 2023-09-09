@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using SONMARKET.Data;
-using SONMARKET.DTO;
-using SONMARKET.Models;
+using newmarket.Data;
+using newmarket.DTO;
+using newmarket.Models;
 
-namespace SONMARKET.Controllers
+namespace newmarket.Controllers
 {
     public class PromocoesController : Controller
     {

@@ -1,4 +1,4 @@
-namespace SONMARKET.Models
+namespace newmarket.Models
 {
     public class Produto
     {

@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace SONMARKET.DTO
+namespace newmarket.DTO
 {
     public class PromocaoDTO
     {

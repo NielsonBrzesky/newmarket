@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using SONMARKET.Data;
-using SONMARKET.Models;
+using newmarket.Data;
+using newmarket.Models;
 
-namespace SONMARKET.Controllers
+namespace newmarket.Controllers
 {
     public class EstoqueController : Controller
     {

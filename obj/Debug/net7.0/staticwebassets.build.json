@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9wQUWvFOTdpZp3M+8kJzhTwTZJLpTYQErhzaQ8x06jc=",
+  "Hash": "rmCfJqDTr3PleYZ5Bj31kJF8yDFDGxg5DZlMKgCQS+M=",
   "Source": "newmarket",
   "BasePath": "_content/newmarket",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\ARQUIVOS\\projetos\\newmarket\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\newmarket.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\ARQUIVOS\\projetos\\newmarket\\wwwroot\\css\\frente.css",
+      "SourceId": "newmarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ARQUIVOS\\projetos\\newmarket\\wwwroot\\",
+      "BasePath": "_content/newmarket",
+      "RelativePath": "css/frente.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\frente.css"
     },
     {
       "Identity": "C:\\ARQUIVOS\\projetos\\newmarket\\wwwroot\\css\\sb-admin.css",
@@ -185,6 +202,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\demo\\datatables-demo.js"
+    },
+    {
+      "Identity": "C:\\ARQUIVOS\\projetos\\newmarket\\wwwroot\\js\\frente.js",
+      "SourceId": "newmarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ARQUIVOS\\projetos\\newmarket\\wwwroot\\",
+      "BasePath": "_content/newmarket",
+      "RelativePath": "js/frente.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\frente.js"
     },
     {
       "Identity": "C:\\ARQUIVOS\\projetos\\newmarket\\wwwroot\\js\\sb-admin.js",

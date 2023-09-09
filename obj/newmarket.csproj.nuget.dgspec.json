@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\ARQUIVOS\\projetos\\newmarket\\newmarket.csproj": {}
+    "C:\\ARQUIVOS\\projetos\\newmarket\\newmarket.csproj": {}
   },
   "projects": {
-    "c:\\ARQUIVOS\\projetos\\newmarket\\newmarket.csproj": {
+    "C:\\ARQUIVOS\\projetos\\newmarket\\newmarket.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\ARQUIVOS\\projetos\\newmarket\\newmarket.csproj",
+        "projectUniqueName": "C:\\ARQUIVOS\\projetos\\newmarket\\newmarket.csproj",
         "projectName": "newmarket",
-        "projectPath": "c:\\ARQUIVOS\\projetos\\newmarket\\newmarket.csproj",
+        "projectPath": "C:\\ARQUIVOS\\projetos\\newmarket\\newmarket.csproj",
         "packagesPath": "C:\\Users\\nilbr\\.nuget\\packages\\",
-        "outputPath": "c:\\ARQUIVOS\\projetos\\newmarket\\obj\\",
+        "outputPath": "C:\\ARQUIVOS\\projetos\\newmarket\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

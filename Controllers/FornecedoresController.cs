@@ -43,15 +43,15 @@ namespace newmarket.Controllers
             }
         }
 
-        // [HttpPost]
-        // public IActionResult Deletar(int id) {
-        //     if(id > 0) {
-        //         var fornecedor = database.Fornecedores.First(forne => forne.Id == id);
-        //         fornecedor.Status = false;
-        //         database.SaveChanges();
-        //     }
-        //     return RedirectToAction("Fornecedores", "Gestao");
-        //     //return Content(id.ToString());
-        // }
+        [HttpPost]
+        public IActionResult Deletar(int id) {
+            if(id > 0) {
+                var fornecedor = dataBase.Fornecedores.First(forne => forne.Id.Equals(id));
+                fornecedor.Status = false;
+                dataBase.SaveChanges();
+            }
+            return RedirectToAction("Fornecedores", "Gestao");
+            //return Content(id.ToString());
+        }
     }
 }

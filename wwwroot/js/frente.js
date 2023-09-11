@@ -1,6 +1,6 @@
 // @ts-nocheck
 // console.log("Olá Mundo tá sussa!!!!!");
-// console.log($);
+//  console.log($);
 /** Declaração de variaveis */
 // var enderecoProduto = "http://localhost:5232/Produtos/Produto/";
 // var enderecoGerarVenda = "http://localhost:5232/Produtos/gerarvenda/";
@@ -8,14 +8,13 @@
 // var compra = [];
 // var _totalVenda_ = 0.0;
 
-var enderecoProduto = "http://localhost:5232/Produtos/Produto/1";
+var enderecoProduto = "http://localhost:5063/Produtos/Produto/1";
 
 $("#pesquisar").click(function() {
 	$.post(enderecoProduto, function(dados, status) {
-		alert("Dados: " + dados + " Status: " + status);
+		alert("Dados: " + dados + " - Status: " + status);
 	});
 });
-
 
 // /**Inicio*/
 // $("#idPosVenda").hide();

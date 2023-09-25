@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using newmarket.Data;
 using newmarket.DTO;
 using newmarket.Models;
@@ -73,52 +74,52 @@ namespace newmarket.Controllers
 		[HttpPost]
 		public IActionResult Produto(int id)
 		{
-			return Json("O JSON está funcional, requisição feita com SUCESSOOOO!!!");
+			// return Json("O JSON está funcional, requisição feita com SUCESSOOOO!!!");
 
-			// if (id > 0)
-			// {
-			// 	var produto = dataBase.Produtos.Where(p => p.Status.Equals(true)).Include(p => p.Categoria).Include(p => p.Fornecedor).First(p => p.Id.Equals(id));
+			if (id > 0)
+			{
+				var produto = dataBase.Produtos.Where(p => p.Status.Equals(true)).Include(p => p.Categoria).Include(p => p.Fornecedor).First(p => p.Id.Equals(id));
 
-			// 	if (produto == null)
-			// 	{
-			// 		var estoque = dataBase.Estoques.First(e => e.Produto.Id.Equals(produto.Id));
-			// 		if (estoque != null)
-			// 			produto = null;
-			// 	}
+				if (produto == null)
+				{
+					var estoque = dataBase.Estoques.First(e => e.Produto.Id.Equals(produto.Id));
+					if (estoque != null)
+						produto = null;
+				}
 
-			// 	if (produto != null)
-			// 	{
-			// 		Promocao promocao;
+				if (produto != null)
+				{
+					Promocao promocao;
 
-			// 		try
-			// 		{
-			// 			promocao = dataBase.Promocoes.First(p => p.Produto.Id.Equals(produto.Id) && p.Status.Equals(true));
-			// 		}
-			// 		catch (Exception e)
-			// 		{
-			// 			promocao = null;
-			// 		}
+					try
+					{
+						promocao = dataBase.Promocoes.First(p => p.Produto.Id.Equals(produto.Id) && p.Status.Equals(true));
+					}
+					catch (Exception e)
+					{
+						promocao = null;
+					}
 
-			// 		if (promocao != null)
-			// 		{
-			// 			produto.PrecoDeVenda -= (produto.PrecoDeVenda * (promocao.Porcentagem / 100));
-			// 		}
+					if (promocao != null)
+					{
+						produto.PrecoDeVenda -= (produto.PrecoDeVenda * (promocao.Porcentagem / 100));
+					}
 
-			// 		Response.StatusCode = 200;
-			// 		return Json(produto);
-			// 	}
-			// 	else
-			// 	{
-			// 		Response.StatusCode = 404;
-			// 		return Json(null);
-			// 	}
+					Response.StatusCode = 200;
+					return Json(produto);
+				}
+				else
+				{
+					Response.StatusCode = 404;
+					return Json(null);
+				}
 
-			// }
-			// else
-			// {
-			// 	Response.StatusCode = 403;
-			// 	return Json(null);
-			// }
+			}
+			else
+			{
+				Response.StatusCode = 403;
+				return Json(null);
+			}
 		}
 
 		// [HttpPost]

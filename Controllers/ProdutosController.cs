@@ -1,3 +1,4 @@
+using System.Globalization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using newmarket.Data;
@@ -24,8 +25,8 @@ namespace newmarket.Controllers
                 produto.Nome = produtoTemp.Nome;
                 produto.Categoria = dataBase.Categorias.First(categoria => categoria.Id.Equals(produtoTemp.CategoriaID));
                 produto.Fornecedor = dataBase.Fornecedores.First(fornecedor => fornecedor.Id.Equals(produtoTemp.FornecedorID));
-                produto.PrecoDeCusto = produtoTemp.PrecoDeCusto;
-                produto.PrecoDeVenda = produtoTemp.PrecoDeVenda;
+                produto.PrecoDeCusto = float.Parse(produtoTemp.PrecoDeCustoString.Replace(",", "."), CultureInfo.InvariantCulture.NumberFormat);
+                produto.PrecoDeVenda = float.Parse(produtoTemp.PrecoDeVendaString.Replace(",", "."), CultureInfo.InvariantCulture.NumberFormat);
                 produto.Medicao = produtoTemp.Medicao;
                 produto.Status = true;
                 dataBase.Produtos.Add(produto);

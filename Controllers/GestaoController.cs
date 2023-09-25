@@ -104,18 +104,18 @@ namespace newmarket.Controllers
             return View(promoView);
         }
 
-        // public IActionResult Estoque() {
-        //     var listaEstoque = dataBase.Estoques.Include(e => e.Produto).ToList();
-        //     return View(listaEstoque);
-        // }
+        public IActionResult Estoque() {
+            var listaEstoque = dataBase.Estoques.Include(e => e.Produto).ToList();
+            return View(listaEstoque);
+        }
 
-        //  public IActionResult NovoEstoque() {
-        //     ViewBag.Produtos = dataBase.Produtos.ToList();
-        //     return View();
-        // }
+         public IActionResult NovoEstoque() {
+            ViewBag.Produtos = dataBase.Produtos.ToList();
+            return View();
+        }
 
-        //  public IActionResult EditarEstoque() {
-        //     return Content("");
-        // }
+         public IActionResult EditarEstoque() {
+            return Content("");
+        }
     }
 }

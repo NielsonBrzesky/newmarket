@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using newmarket.Data;
@@ -5,6 +6,7 @@ using newmarket.DTO;
 
 namespace newmarket.Controllers
 {
+    [Authorize]
     public class GestaoController : Controller
     {
         private readonly ApplicationDbContext dataBase;
@@ -116,6 +118,17 @@ namespace newmarket.Controllers
 
          public IActionResult EditarEstoque() {
             return Content("");
+        }
+
+        public IActionResult Vendas() {
+            var listaDeVendas = dataBase.Vendas.ToList();
+            return View(listaDeVendas);
+        }
+
+        //Action que carrega os gráficos do relatório de vendas.
+        [HttpPost]
+        public IActionResult RelatorioDeVendas() {
+            return Ok(dataBase.Vendas.ToList());
         }
     }
 }

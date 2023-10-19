@@ -60,7 +60,7 @@
                     <input type="text" class="form-control" placeholder="Fornecedor" disabled id="idCampoFornecedor" required>
                     <br>
                     <label>Preço de venda</label>
-                    <input class="form-control" type="number" step="any" placeholder="20.50" disabled id="idCampoPreco" required>
+                    <input class="form-control" type="number" step="any" placeholder="0.00" disabled id="idCampoPreco" required>
                     <br>
                     <label>Quantidade</label>
                     <input class="form-control" type="number" step="any" placeholder="Quantidade" id="idCampoQuantidade" required>
@@ -114,10 +114,10 @@
         <h4 class="modal-title">Finalizar venda</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
-
+      
       <!-- Modal body -->
       <div class="modal-body">
-          <h2>Total: R$ <span id="totalVenda">69,90</span> </h2>
+          <h2>Total: R$ <span id="totalVenda">0.00</span> </h2>
           <hr>
           <p>Valor pago:</p>
           <input type="number" placeholder="0.00" class="form-control" id="idValorPago">
@@ -131,7 +131,7 @@
             <button type="button" class="btn btn-primary" data-dismiss="modal" id="idFecharModal">Fechar</button>
         </div>
         <div id="idPreVenda">
-            <button type="button" class="btn btn-success" id="idFinalizarVenda">Finalizar venda</button>
+            <button type="button" class="btn btn-success" id="idFinalizarVendaButton">Finalizar venda</button>
             <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
         </div>
       </div>
